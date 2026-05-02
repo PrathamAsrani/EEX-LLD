@@ -1,0 +1,27 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36">
+  <diagram name="Page-1" id="sUdJKDlqUUguzxYBoudD">
+    <mxGraphModel dx="838" dy="549" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dAtLXOTo_t2N1C7jd-nU-3" edge="1" parent="1" source="dAtLXOTo_t2N1C7jd-nU-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="dAtLXOTo_t2N1C7jd-nU-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dAtLXOTo_t2N1C7jd-nU-4" connectable="0" parent="dAtLXOTo_t2N1C7jd-nU-3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;nbsp;[1 ---- *]&amp;nbsp;" vertex="1">
+          <mxGeometry relative="1" x="-0.0375" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dAtLXOTo_t2N1C7jd-nU-1" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="User&lt;br&gt;1. id&lt;div&gt;2. user_id&lt;/div&gt;&lt;div&gt;3. first_name&lt;/div&gt;&lt;div&gt;4. middle_name&lt;/div&gt;&lt;div&gt;5. last_name&lt;/div&gt;&lt;div&gt;6. phone&lt;/div&gt;&lt;div&gt;7. mail&lt;/div&gt;&lt;div&gt;8. verified&lt;/div&gt;&lt;div&gt;9. archived&lt;/div&gt;&lt;div&gt;10. created_at&lt;/div&gt;&lt;div&gt;11. updated_at&lt;/div&gt;&lt;div&gt;12. date_of_birth&lt;/div&gt;&lt;div&gt;&lt;br&gt;-------------------&lt;/div&gt;&lt;div&gt;id: primary index&lt;/div&gt;&lt;div&gt;user_id: candidate key&lt;/div&gt;&lt;div&gt;phone: unique key (idempotency)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="280" width="280" x="10" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="dAtLXOTo_t2N1C7jd-nU-2" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="InvestmentAccount&lt;div&gt;1. id&lt;/div&gt;&lt;div&gt;2. investment_account_id&lt;/div&gt;&lt;div&gt;3. user_id&lt;/div&gt;&lt;div&gt;4. partner&lt;/div&gt;&lt;div&gt;5. active&lt;/div&gt;&lt;div&gt;6. access_token&lt;/div&gt;&lt;div&gt;7. refresh_token&lt;/div&gt;&lt;div&gt;8. account_details&lt;/div&gt;&lt;div&gt;9. archived&lt;/div&gt;&lt;div&gt;10. created_at&lt;/div&gt;&lt;div&gt;11. updated_at&lt;/div&gt;&lt;div&gt;-----------------------------&lt;/div&gt;&lt;div&gt;&lt;div&gt;id: primary index&lt;/div&gt;&lt;div&gt;user_id: foreign key&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;investment_account_id&lt;/span&gt;: candidate key&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="250" width="250" x="450" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="dAtLXOTo_t2N1C7jd-nU-5" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Securities&lt;div&gt;1. id&lt;/div&gt;&lt;div&gt;2. security_id&lt;/div&gt;&lt;div&gt;3. security_type&lt;/div&gt;&lt;div&gt;4. user_id&lt;/div&gt;&lt;div&gt;5. investment_account_id&lt;/div&gt;&lt;div&gt;6. units&lt;/div&gt;&lt;div&gt;7. purchased_price&lt;/div&gt;&lt;div&gt;8. archived&lt;/div&gt;&lt;div&gt;9. created_at&lt;/div&gt;&lt;div&gt;10. updated_at&lt;/div&gt;&lt;div&gt;--------------------------------&lt;/div&gt;&lt;div&gt;&lt;div&gt;id: primary index&lt;/div&gt;&lt;div&gt;user_id: foreign key&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;investment_account_id&lt;/span&gt;: foreign&amp;nbsp;key&lt;/div&gt;&lt;/div&gt;&lt;div&gt;security_id:&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;candidate key&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="250" width="250" x="250" y="470" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
